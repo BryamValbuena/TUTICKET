@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/tituloBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a TUTICKET"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/subtituloBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloBienvenida"
+        android:layout_centerHorizontal="true"
+        android:text="Compra, reserva y disfruta eventos de todo tipo"
+        android:textSize="16sp"
+        android:textColor="#D3C01B"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres"
+        android:inputType="text"
+        android:layout_below="@id/subtituloBienvenida"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:inputType="text"
+        android:layout_below="@id/etNombre"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número telefónico"
+        android:inputType="phone"
+        android:layout_below="@id/etApellido"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNumero"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="142dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:backgroundTint="#E8E8E8"
+        android:text="Registrarse"
+        android:textColor="#D3C01B" />
+
+    <TextView
+        android:id="@+id/textoCuentaExistente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegistrar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="136dp"
+        android:text="Ya tienes cuenta?"
+        android:textColor="#808080"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnCuentaExistente"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoCuentaExistente"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="123dp"
+        android:background="#D3C01B"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
